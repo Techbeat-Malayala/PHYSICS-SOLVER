@@ -20,7 +20,7 @@ Np= "Number of turns in Primary"
 
 
 print("======================================================")
-print("      PHYSICS ALL EQUATIONS (KERALA SYLLABUS) ")
+print("      PHYSICS ALL EQUATIONS  ")
 print("======================================================")
 print(" \n DID YOU SUBSRIBE TO @AADI_FX222 ?")
 answer= input("\na.yes / \nb.no=").lower()
