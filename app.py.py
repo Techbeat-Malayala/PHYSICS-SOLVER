@@ -48,20 +48,25 @@ elif formula == y :
     print (" \n    Object Distance (u)  \n    Image Distance (v)\n Focal Length (f) ")
     print("======================================================")
     
-selection = input(" what do you want to find out ? u/v/f").strip().lower()
-if selection == "f":
-    u_val = int(input(" WHAT IS YOUR OBJECT DISTANCE (u)?="))
-    v_val = int(input(" WHAT IS YOUR DISTANCE OF IMAGE(v)?="))
-    f_val = (v_val * u_val) / (u_val - v_val)
-    print(" FOCAL LENGTH IS :", f_val)
-    print("======================================================")
-    print("======================================================")
+    selection = input(" what do you want to find out ? u/v/f").strip().lower()
+    if selection == "f":
+        u_val = int(input(" WHAT IS YOUR OBJECT DISTANCE (u)?="))
+        v_val = int(input(" WHAT IS YOUR DISTANCE OF IMAGE(v)?="))
+        f_val = (v_val * u_val) / (u_val - v_val)
+        print("u=",u_val)
+        print("v'=",v_val)
+        
+        print(" FOCAL LENGTH IS :", f_val)
+        print("======================================================")
+        print("======================================================")
 
 elif selection == "v":
     u_val = int(input(" WHAT IS YOUR OBJECT DISTANCE ?(u)="))
     f_val = int(input(" WHAT IS YOUR FOCAL LENGTH?(f)="))
     v_val = (u_val * f_val) / (f_val + u_val)
-    print(" IMAGE DISTANCE IS :", v_val)
+print("u=",u_val)
+print("f=",f_val)
+    print("IMAGE DISTANCE IS:", v_val)
 
 elif selection == "u":
     f_val = int(input(" WHAT IS YOUR FOCAL LENGTH?(f)="))
@@ -95,7 +100,3 @@ elif selection == "u":
         Vs_val = int(input(" WHAT IS SECONDARY VOLTAGE ?(Vs)?"))
         Np_val = (Ns_val * Vp_val) / Vs_val
         print(" NUMBER OF TURNS IN PRIMARY:", Np_val)
-if formula == y :
-    print("======================================================")
-    print("======================================================")
-
