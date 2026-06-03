@@ -1,6 +1,16 @@
 import sys
 import tkinter as tk
 from tkinter import messagebox
+except ModuleNotFoundError
+    print("\n" + "="*50)
+    print("❌ ERROR: Tkinter library is missing on your system!")
+    print("="*50)
+    print("To fix this, run the command based on your OS:")
+    print("🔹 Linux (Ubuntu/Kali): sudo apt install python3-tk")
+    print("🔹 Mac (Homebrew):     brew install python-tk")
+    print("🔹 Windows:            Re-install Python and check 'tcl/tk and IDLE'")
+    print("="*50 + "\n")
+    sys.exit(1)
 root = tk.Tk()
 root.title("🌌 Physics Solver Dashboard")
 root.geometryroot.geometry("400x800")
