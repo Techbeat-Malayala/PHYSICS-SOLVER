@@ -27,7 +27,7 @@ python --version
 
    1. Clone the repository:
 
-git clone https://github.com
+git clone https://github.com/Techbeat-Malayala/PHYSICS-SOLVER.git
 
 
    1. Navigate to the project directory:
